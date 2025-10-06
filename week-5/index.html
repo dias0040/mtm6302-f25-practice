@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Week 5 – List Wizard Training 🧙‍♂️</title>
+  <style>
+    body { font-family: system-ui, Arial, sans-serif; line-height: 1.5; padding: 2rem; }
+    h1 { margin-top: 0; }
+    .card { border: 1px solid #ddd; border-radius: 12px; padding: 1rem 1.25rem; }
+    ul { margin: .5rem 0 0; padding-left: 1.25rem; }
+    code { background: #f6f8fa; padding: .1rem .35rem; border-radius: 6px; }
+    .hint { color: #555; font-size: 0.95rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🧪 Week 5 – Guided Practice (List Wizard Training)</h1>
+    <p class="hint">Open your browser console (<code>Ctrl/⌘ + Shift + J</code>) to cast your spells.</p>
+  </header>
+
+  <main>
+    <section class="card" aria-labelledby="inv-title">
+      <h2 id="inv-title">📜 Your Spellbook (Inventory)</h2>
+
+      <!-- This is the exact target your JS practice uses -->
+      <span id="items" aria-live="polite">
+        <!-- JS will render a <ul><li>…</li></ul> here -->
+      </span>
+
+      <p class="hint">
+        Try in the console:
+        <code>addItem('🧪 Potion of Wisdom')</code>,
+        <code>removeItem(0)</code>,
+        <code>replaceItem(0, 'Phoenix Feather')</code>
+      </p>
+    </section>
+
+    <section style="margin-top:1.5rem;">
+      <h3>🧙‍♀️ Notes</h3>
+      <ul>
+        <li><code>addItem</code> uses <code>push()</code> to add to the array and then updates the DOM.</li>
+        <li><code>removeItem(index)</code> uses <code>splice()</code> to delete by position.</li>
+        <li><code>replaceItem(index, newItem)</code> swaps an existing item (via assignment or <code>splice()</code>).</li>
+        <li><code>displayItems()</code> rebuilds the list inside <code>&lt;span id="items"&gt;</code>.</li>
+      </ul>
+    </section>
+  </main>
+
+  <noscript>This practice requires JavaScript. Please enable it to continue your wizardry. 🪄</noscript>
+
+  <!-- 🧙‍♀️ “This is your enchanted scroll. The spells (scripts) go at the bottom!” -->
+  <script src="script.js"></script>
+</body>
+</html>
